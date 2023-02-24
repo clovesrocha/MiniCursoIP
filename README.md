@@ -1,2 +1,2 @@
 # MiniCursoIP
-MiniCurso de Introdução à Python.
+MiniCurso de Introdução ao Python.
