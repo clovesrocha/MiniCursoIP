@@ -1,0 +1,65 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Ep. #01.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPwbc6UY0DYjcfhd+LGkbS9",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/clovesrocha/MiniCursoIP/blob/master/Ep_01%20v2.0\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Tutorial de Python"
+      ],
+      "metadata": {
+        "id": "jMVo9ZzGYr__"
+      }
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "oUg5A03K-GFM",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "f2a14159-340b-4c8b-c1da-9bf8cea0a907"
+      },
+      "source": [
+        "# UNINASSAU - GRAÇAS\n",
+        "# PROF. MSc Cloves\n",
+        "# CC 4MB A301 de 7h30 às 10 (quinta)\n",
+        "# SI 2MA A205 de 10h às 12h40 (quinta)\n",
+        "\n",
+        "print(\"Olá estudantes, bom dia!\")"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Olá estudantes, bom dia!\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
