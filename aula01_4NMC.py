@@ -1,7 +1,7 @@
 # Aula - Ep. #02 - Mini Curso de #IP
 # Tipos Primitivos de Dados em Python
 # Docente: Prof MsC Cloves Rocha
-# Estudantes: Ellen, Guilherme, Maria Luiza, Nicolas e Geraldo
+# Estudantes: Ellen Virginia, Guilherme Freitas, Maria Luiza, Nicolas e Geraldo
 # Turma: 4 NMC
 
 # Tipo Inteiro ok
@@ -14,3 +14,5 @@ c = 5
 print (type(c))
 r = 5
 print(c == r)
+
+print(c >= r)
