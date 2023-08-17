@@ -1,0 +1,65 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Ep. #02.ipynb",
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/clovesrocha/MiniCursoIP/blob/master/aula%201\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Ug7UrReB_psV",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "5dcfc266-ed30-471d-c4b4-5f0c9375bea3"
+      },
+      "source": [
+        "# Aula - Ep. #02 - Mini Curso de #IP\n",
+        "# Tipos Primitivos de Dados em Python\n",
+        "#Docente : Cloves Rocha\n",
+        "#estudantes: Rodollfo Monteiro(01553113), Lucas Henrique(01575340), Pytter Hugo(01540207)\n",
+        "#Instituição: Uninassau- Graças\n",
+        "#CC 4NMC\n",
+        "# Tipo Inteiro ok\n",
+        "# Tipo Booleanos ok\n",
+        "# Tipo Caracteres (string) ok\n",
+        "\n",
+        "c = 2+3\n",
+        "print (c)\n",
+        "#c = 5\n",
+        "#r = 5\n",
+        "#print(c == r)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "True\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
