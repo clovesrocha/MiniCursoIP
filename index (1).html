@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <div class="timer">
+  <p id="timer">00:00</p>
+  <button id="startButton">Start</button>
+  <button id="pauseButton">Pause</button>
+  <button id="resetButton">Reset</button>
+  </div>
+  <pre class="GoghGogh">
+    <h1> Hello world 4MC  </h1>
+    <h2> Docente: Cloves Rocha </h2>
+    <h3> ATA DIGITAL DA TURMA </h3>
+    <strong>
+    <h4> Estudantes: </h4>
+      <p>
+        Caio Henrique Guedes de Souza - 01558106   
+        Gabriel Cruz Pereira Viegas - 01514331
+        Nicolas Rafael Silva Lucena / 01565072
+        Ellen Virginia Albuquerque da Silva / 01570521
+        Iago Vitor Germano Albuquerque da Silva  / 01565468
+        vinicius Caliel Nunes Passos / 01554544
+        Geraldo Ferreira da Silva Júnior / 01574443
+        Hilquiades soares estevam(01526768)
+        Bruno Gabriell Amorim Ramos(01529450)
+        Robson Nunes(24008712)
+        Wollace Martins Buarque (01554427)
+        Anthony Paulo Ramos Oliveira (01561247)
+        José William Guilherme Santos - 01553544
+        Pedro Ricardo Da Silva Rodrigues - 01565486
+        Kauã Albuquerque (01516413)
+        Eliabe Wesley da Silva (01571655
+        Eduardo Mendes Ferreira de Oliveira (01504209)
+        Amanda Luana Santos Alves (01535268)
+        Gabriela Alves de Queiroga - 01569138
+        Rodollfo Monteiro Valença - 01553113
+        Lucas Henrique Nascimento de Lima Silva - 01575340
+        Pytter Hugo Ferreira Moura Silva - 01540207
+        João Gabriel Candido de Melo - 01542139
+        Caio Nemésio de Araújo e Sousa (01564870)
+        Caio Cesar Costa Chaves - 01518018
+        João Arthur Duarte de Faria - 01558846
+      </p>
+  </pre>
+  </strong>
+  <script>
+        let timerInterval;
+        let startTime;
+        let elapsedTime = 0;
+        let isRunning = false;
+
+        const timerDisplay = document.getElementById("timer");
+        const startButton = document.getElementById("startButton");
+        const pauseButton = document.getElementById("pauseButton");
+        const resetButton = document.getElementById("resetButton");
+
+        function updateTimerDisplay() {
+            const seconds = Math.floor((Date.now() - startTime + elapsedTime) / 1000);
+            const minutes = Math.floor(seconds / 60);
+            const remainingSeconds = seconds % 60;
+
+            const formattedTime = `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
+            timerDisplay.innerText = formattedTime;
+        }
+
+        function startTimer() {
+            if (!isRunning) {
+                startTime = Date.now() - elapsedTime;
+                timerInterval = setInterval(updateTimerDisplay, 1000);
+                isRunning = true;
+            }
+        }
+
+        function pauseTimer() {
+            if (isRunning) {
+                clearInterval(timerInterval);
+                elapsedTime = Date.now() - startTime;
+                isRunning = false;
+            }
+        }
+
+        function resetTimer() {
+            clearInterval(timerInterval);
+            elapsedTime = 0;
+            isRunning = false;
+            updateTimerDisplay();
+        }
+
+        startButton.addEventListener("click", startTimer);
+        pauseButton.addEventListener("click", pauseTimer);
+        resetButton.addEventListener("click", resetTimer);
+    </script>
+      
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
