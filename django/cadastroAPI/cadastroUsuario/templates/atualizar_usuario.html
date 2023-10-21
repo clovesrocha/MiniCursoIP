@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block dashboard %}
+  <h1>Atualizar Usuário</h1>
+  <form method="post" enctype="multipart/form-data" class ='form-control'>
+    {% csrf_token %}
+    <center >
+    <input type="text" name="nome" value="{{ serializer.nome.value }}" class='form-control' ><br>
+    <input type="text" name="sobrenome" value="{{ serializer.sobrenome.value }}" class='form-control'><br>
+    <input type="text" name="idade" value="{{ serializer.idade.value }}" class='form-control'><br>
+    <img src="{{ usuario.foto.url }}" name ="foto" alt="Foto de Perfil" class ='foto-atualiza'><br>
+    <input type="file" name="foto"><br>
+    <button type="submit">Atualizar</button>
+    </center>
+  </form>
+  <a href="{% url 'listar' %}">Voltar para a Lista de Usuários</a>
+{% endblock %}
