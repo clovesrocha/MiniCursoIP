@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block dashboard %}
+  <h1>Lista de Usuários</h1> 
+    {% for usuario in usuarios %}
+    <br>
+<ul class="user-list">
+<main>
+    <li class = 'usuario'>
+      <img src="{{ usuario.foto.url }}" alt="Foto de Perfil" class='foto'>
+      {{ usuario.nome }}  {{ usuario.sobrenome }} idade : {{ usuario.idade }} anos
+      <a href="{%url 'update' usuario.id %}" class='btn btn-success'>Editar</a>
+
+      <form method="post" action="{%url 'deletar' usuario.id %}" style="display:inline;" >
+        {% csrf_token %}
+        <button type="submit" class='btn btn-danger'>Deletar</button>
+      </form>
+    </li>
+    {% empty %}
+      <li>Nenhum usuário encontrado.</li>
+    {% endfor %}
+  </ul>
+  <main/>
+{% endblock %}
