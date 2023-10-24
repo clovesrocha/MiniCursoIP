@@ -1,6 +1,8 @@
 # Energeasy
 
-Energeasy é um projeto desenvolvido por Helton dos Santos França, com contribuições de Vinícius Marques Ribeiro, que tem como objetivo conscientizar os usuários sobre diferentes conceitos de energia, incluindo elétrica, nuclear e solar. Além disso, o projeto visa desmistificar informações errôneas sobre energia, permitir o cadastro de dispositivos e realizar cálculos de economia de energia.
+Energeasy é um projeto desenvolvido por Helton dos Santos França, com contribuições de Vinícius Marques Ribeiro, somos orientados peolo Prof. MSc. Cloves Rocha.
+- Nosso objetivo conscientizar os usuários sobre diferentes conceitos de energia, incluindo elétrica, nuclear e solar. 
+- Além disso, o projeto visa desmistificar informações errôneas sobre energia, permitir o cadastro de dispositivos e realizar cálculos de economia de energia.
 
 ## Instalação
 
