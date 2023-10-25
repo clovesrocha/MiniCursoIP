@@ -55,7 +55,7 @@ class UpdateUsuario(generics.UpdateAPIView):
         user_id = kwargs.get('pk')
         usuario = get_object_or_404(Usuario, pk=user_id)
         serializer = self.serializer_class(instance=usuario)
-        return render(request, 'atualizar_usuario.html', {'serializer': serializer, 'usuario': usuario})
+        return render(request, 'atualizarusuario.html', {'serializer': serializer, 'usuario': usuario})
     
     def post(self, request, *args, **kwargs):
         user_id = kwargs.get('pk')
@@ -67,7 +67,7 @@ class UpdateUsuario(generics.UpdateAPIView):
         if serializer.is_valid():
             serializer.save()
             return redirect('listar') 
-        return render(request, 'atualizar_usuario.html', {'serializer': serializer, 'usuario': usuario})
+        return render(request, 'atualizarusuario.html', {'serializer': serializer, 'usuario': usuario})
 
 class DeleteUsuario(generics.DestroyAPIView):
 
