@@ -34,7 +34,7 @@ Se você deseja contribuir para este repositório, siga estas diretrizes:
 
 ## Contato
 
-Para mais informações sobre a Workshop Django Web ou para consultas relacionadas ao conteúdo, entre em contato com os apresentadores:
+Para mais informações sobre a Workshop Django Web ou para consultas relacionadas ao conteúdo, entre em contato com os instrutores:
 
 - Helton dos Santos França: heltonmsb@gmail.com
 - Vinícius Marques Ribeiro: vmarks446@gmail.com
