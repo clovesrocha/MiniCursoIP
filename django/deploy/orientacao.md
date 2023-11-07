@@ -1,7 +1,7 @@
 # Adicionando e reforçando os pontos levantados por Helton sobre Deploy.
 
 - PythonAnywhere:
-O pythonywhere foi a opção utilizada por mim, ainda que seja uma solução que pode parecer complicada inicialmente, mas oferece um excelente desempenho para o deploy do back-end e funciona muito bem. Confira este tutorial útil de deploy no PythonAnywhere:  https://www.youtube.com/watch?v=RheP0OIxZFE
+O pythonywhere foi a opção utilizada por mim, ainda que seja uma solução que possa parecer complicada inicialmente, mas oferece um excelente desempenho para o deploy do back-end e funciona muito bem. Confira este tutorial útil de deploy no PythonAnywhere:  https://www.youtube.com/watch?v=RheP0OIxZFE
 Dê uma olhada também nesse site, para se aprofundar no conceito e aplicação deste deploy: https://www.pythonanywhere.com/
 
 - Fly.io:
