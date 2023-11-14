@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Descarte</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .custom-menu {
+            color: black;
+            font-weight: bold;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        .card {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            background-color: rgb(144, 211, 173);
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link custom-menu Inicio" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link custom-menu" href="#">Sobre</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link custom-menu" href="#">Logística Reversa</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link custom-menu" href="#">Contatos</a>
+        </li>
+    </ul>
+
+    <h1 style="text-align:center;">Rec Recycle</h1>
+
+    <div class="container mt-4">
+        <div class="card">
+            <form action="processar_agendamento.py" method="post">
+                <div class="form-group d-flex justify-content-between">
+                    <label for="data_hora" class="text-left">Escolha a data e hora do descarte:</label>
+                    <input type="datetime-local" id="data_hora" name="data_hora" required>
+                </div>
+                <div class="form-group d-flex justify-content-between">
+                    <label for="produto" class="text-left">Produto:</label>
+                    <input type="text" id="produto" name="produto" required>
+                </div>
+                <div class="form-group d-flex justify-content-between">
+                    <label for="local_descarte" class="text-left">Local de Descarte:</label>
+                    <select id="local_descarte" name="local_descarte" class="form-control">
+                        <option value="loja">Endereço Cadastrado</option>
+                        <option value="outro">Outro (especifique local)</option>
+                    </select>
+                </div>
+                <div class="form-group d-flex justify-content-between">
+                    <label for="outro_local" class="text-left">Especifique o local, se for 'Outro':</label>
+                    <input type="text" id="outro_local" name="outro_local">
+                </div>
+                <div class="form-group text-right">
+                    <input type="submit" value="Agendar Descarte" class="btn btn-primary">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Recycle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .custom-menu {
+            color: black;
+            font-weight: bold;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+            width: 150%;
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(144, 211, 173);">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link custom-menu Inicio" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link custom-menu" href="#">Sobre</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link custom-menu" href="#">Logistica Reversa</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link custom-menu" href="#">Contatos</a>
+        </li>
+    </ul>
+
+    <h1 style="text-align:center;">Rec Recycle</h1>
+    <div class="content-container">
+        <h1>Cadastro para Coleta de Dispositivo Eletrônico</h1>
+
+        <form action="/action_page.php">
+          <div class="form-group">
+            <label for="fname">Nome Completo:</label>
+            <input type="text" class="form-control" id="fname" name="fname">
+          </div>
+          <div class="form-group">
+            <label for="mail">Email:</label>
+            <input type="text" class="form-control" id="mail" name="mail">
+          </div>
+          <div class="form-group">
+            <label for="endereçop">Endereço:</label>
+            <input type="text" class="form-control" id="endereçop" name="endereçop">
+          </div>
+          <div class="form-group">
+            <label for="numerop">Celular+ddd:</label>
+            <input type="text" class="form-control" id="numerop" name="numerop">
+          </div>
+          <div class="form-group">
+            <label for="loginp">Login:</label>
+            <input type="text" class= "form-control" id="loginp" name="loginp">
+          </div>
+          <div class="form-group">
+            <label for="senhap">Senha:</label>
+            <input type="password" class="form-control" id="senhap" name="senhap">
+          </div>
+          <input type="image" src="../templates/images/check1.jpg" alt="Submit" width="90" height="90" onclick="cadastroConcluido()">
+        </form>
+        
+        <div id="mensagem-cadastro" style="display: none;">
+            <p>Cadastro concluído!</p>
+        </div>
+    </div> 
+</body>
+</html>
