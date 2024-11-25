@@ -1,5 +1,5 @@
 ### Aqui está um exemplo prático do SQL para resolver parte do desafio proposto:
-
+### Mentor_Prof_Cloves_Rocha :D Calma, que você vai conseguir... 
 ### Procedimento Armazenado: Atualização de Estoque Após Procedimento Médico
 Este procedimento reduz a quantidade de medicamento em estoque após a realização de um procedimento médico.
 
